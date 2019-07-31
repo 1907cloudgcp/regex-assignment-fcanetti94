@@ -11,6 +11,9 @@ grep 'gan$' cities.txt
 --no comments on this one
 grep -Ein "^A|^D|^E" cities.txt 
 
+#5
+grep -in '^[^c]' cities.txt
+
 #6
 grep -E '^.{13}$' cities.txt
 
