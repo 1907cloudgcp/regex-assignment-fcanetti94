@@ -1,0 +1,25 @@
+#1 List the cities that start with "Z" 
+--in this grep command i utilized -n to enumarate the cities that started with Z. Additionally I used the -i command to ignore the casing of the letters in case some city on the list started with a lowercase z.
+grep  -in ".\<Z" cities.txt
+
+#2 List all the cities that end on -gan
+--no comments for this one
+grep 'gan$' cities.txt
+
+
+#3 List all cities that start with A D or E
+--no comments on this one
+grep -Ein "^A|^D|^E" cities.txt 
+
+#6
+grep -E '^.{13}$' cities.txt
+
+#7 Count cities that start with B
+grep -in "^B: cities | wc -l
+
+
+#8
+grep -o 'd' cities.txt | wc -l
+
+#9
+grep -E '(.)\1+$' cities.txt
