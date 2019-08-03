@@ -11,7 +11,10 @@ grep 'gan$' cities.txt
 --no comments on this one
 grep -Ein "^A|^D|^E" cities.txt 
 
-#5
+#4 LIST ALL CITIES THAT HAVE A AS SECOND LETTER AND R AS THIRD LETTER
+grep -Ein "^.ar" cities.txt
+
+#5 LIST ALL CITIES THAT DO NOT START WITH C
 grep -in '^[^c]' cities.txt
 
 #6
