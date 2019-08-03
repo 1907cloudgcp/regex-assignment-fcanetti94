@@ -18,7 +18,7 @@ grep -Ein "^.ar" cities.txt
 grep -in '^[^c]' cities.txt
 
 #6
-grep -E '^.{13}$' cities.txt
+grep -E '^.{13}' cities.txt
 
 #7 Count cities that start with B
 grep -in "^B: cities | wc -l
@@ -29,3 +29,8 @@ grep -o 'd' cities.txt | wc -l
 
 #9
 grep -E '(.)\1+$' cities.txt
+
+Find all five letter palindrome city
+ 34 --This one i achieved in two ways. I will submit the shorter way as my answe    r. The long way to do it is as follows : grep -i "^\([a-z])\([a-z])\[a-z]\2\    1\" cities.txt " This was shortend by substituing the [a-z]
+ 35 with . which means any character
+ 36 grep -i "^(.\)(.\)\.\2\1" cities.txt
